@@ -12,6 +12,7 @@ public class EmployeeWage {
 		int PartTimeHour = 4;
 		int empHr = 0;
 		int TotalWorkingDay = 20;
+		int TotalWorkingHour=100;
 		if (attendance == 0) {
 
 			System.out.println("employee is absent");
@@ -23,9 +24,10 @@ public class EmployeeWage {
 			System.out.println("employee is present");
 			int DailyWage = FullDayHour * WageperHour;
 			System.out.println("Daily employee wage is:: " + DailyWage);
-
-			int wageMonth = DailyWage * TotalWorkingDay;
+            int wageMonth = DailyWage * TotalWorkingDay;
 			System.out.println("Wage for month is::: " + wageMonth);
+			int TotalWageMonth=TotalWorkingHour*DailyWage;
+			System.out.println("Totalwage for month of 100 working hours  "+TotalWageMonth);
 
 		}
 		switch (attendance) {
@@ -42,6 +44,7 @@ public class EmployeeWage {
 			System.out.println("employee is absent");
 
 		}
+		
 	
 	}
 
